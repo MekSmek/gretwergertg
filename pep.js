@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 const NIM_API_BASE = process.env.NIM_API_BASE || 'https://integrate.api.nvidia.com/v1';
-const NIM_API_KEY = process.env.NIM_API_KEY;
+const NIM_API_KEY = process.env.NVIDIA_API_KEY;  // <-- ЭТО ИСПРАВЛЕНО
 
 // Toggle reasoning display in responses
 const SHOW_REASONING = false;
